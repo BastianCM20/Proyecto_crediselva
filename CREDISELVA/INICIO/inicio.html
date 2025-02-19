@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREDISELVA</title>
+    <link rel="stylesheet" href="Style/simulador.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/logo.jpg" width="1268px" height="620px">
+        </div>
+            <nav>   
+                <ul class="menu">
+                    <li><a href="/INICIO/inicio.html">INICIO</a></li> 
+                    <li><a href="/NOSOTROS/nosotros.html">NOSOTROS</a></li>
+                    <li><a href="/SERVICIOS/servicios.html">SERVICIOS</a></li>
+                    <li><a href="/RESEÑAS/reseñas.html">RESEÑAS</a></li>
+                </ul>
+            </nav>
+    </header>         
+    <main>
+        <div class="title">
+            <h1>
+                SIMULA TU CRÉDITO
+            </h1>
+            <h5>
+                Datos referenciales, sujetos a evaluación, tipo de crédito y cliente.
+            </h5>
+        </div>
+        <hr class="line_title">
+        <section class="content_simulador">
+            <div class="simulador">
+                <div class="creditos_cuotas">
+                    <div class="logo_opciones">
+                        <div class="content_logo">
+                            <img src="/INICIO/img/destook.jpeg" alt="">
+                        </div>
+                        <div class="opciones">
+                            <h4>
+                                Tasa de interés
+                            </h4>
+                            <label for="interes">
+                                <input type="text" placeholder="Ingrese la tasa de interés" id="interes">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="logo_opciones">
+                        <div class="content_logo">
+                            <img src="/INICIO/img/moneda.jpeg" alt="">
+                        </div>
+                        <div class="opciones">
+                            <h4>
+                                Monto y Cuota
+                            </h4>
+                            <label for="monto" class="monto_cuota">
+                                <input type="text" placeholder="Ingrese el monto" id="monto">
+                                <input type="text" placeholder="Ingresa el numero de cuotas" id="cuota">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="logo_opciones">
+                        <div class="content_logo">
+                            <img src="/INICIO/img/time.jpeg" alt="" class="time">
+                        </div>
+                        <div class="opciones">
+                            <h4>
+                                Fecha de pago
+                            </h4>
+                            <label for="">
+                                <input type="date">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="simulador">
+                <h4>¿PARA QUIEN ES EL CREDITO?</h4>
+                <div class="parami_negocio">
+                    <div class="para_mi">
+                        <img src="/INICIO/img/perfil.jpeg" alt="">
+                        <input type="button" value="Para mi">
+                    </div>
+                    <div class="para_mi">
+                        <img src="/INICIO/img/bank.jpeg" alt="">
+                        <input type="button" value="Para mi negocio">
+                    </div>
+                </div>
+                <div class="boton_simular" onclick="gen_table();">
+                    <button type="button">Simular</button>
+                </div>
+            </div>
+            <table class="tab">
+                <thead>
+                    <tr>
+                        <td>CUOTAS</td>
+                        <td>CAPITAL</td>
+                        <td>INTERES</td>
+                        <td>INPORTE A PAGAR</td>
+                    </tr>
+                </thead>
+                <tbody id="tab">
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="ft">TOTAL</td>
+                        <td id="t1"></td>
+                        <td id="t2"></td>
+                        <td id="t3"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <div class="pie-pagina">
+            <div class="subpagina">
+                <h6 class="uno"><a href="/NOSOTROS/nosotros.html" class="dos" target="_blank">Nosotros</a></h6>
+                    <p><a href="/INICIO/inicio.html" class="redes">Simulador</a></p>
+                    <p><a href="/terminos/Politica_de_privacidad.pdf" target="_blank" class="redes">Términos y Condiciones</a></p>
+                    <p><a href="https://maps.app.goo.gl/aaxxofkNs4p5Z8Jw9" target="_blank" class="redes">Ubicación</a></p>
+            </div>
+            <div class="subpagina">
+                <h6 class="uno"><a href="/SERVICIOS/servicios.html" class="dos" target="_blank">Servicios</a></h6>
+                    <p><a href="https://api.whatsapp.com/send?phone=%2B51908874329&context=ARDgoOECICwt8YAMR3TMX-vvImu7EV-6K0_mcB24ui47bOYuflEJsyRNF-Q5lVGjz0HCGgSOnZ1uPph5wnfGRlW79MZxlWaZMPeqRXCknd3MgU4dQs5FCHJFdpCb6H5NRnMR7APE7IF-4JTHxjwaT8-5Fg&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawIY8L9leHRuA2FlbQIxMAABHUfKdJttyWyOLDwkr2ALC91fXWL8sjisC5dF0gPsqsbTdDu3zAc6bPSEgg_aem_YYfGhCST0U37MPNS4wiiWA" target="_blank" class="redes">WhatsApp</a></p>
+                    <p ><a href="https://www.instagram.com/crediselva?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="redes">Instagram</a></p>
+                    <p><a href="https://www.facebook.com/profile.php?id=61561945853390&locale=es_LA&_rdc=1&_rdr#" target="_blank" class="redes">Facebook</a></p>
+            </div>  
+            <div class="subpagina">
+                <h6 class="uno"><a href="/RESEÑAS/reseñas.html" class="dos" target="_blank">Reseñas</a></h6>
+                    <p><a href="/RESEÑAS/reseñas.html" class="redes">Politica y Privacidad</a></p>
+                    <p><a href="/RESEÑAS/reseñas.html" class="redes">Preguntas Frecuentes</a></p>
+            </div>
+         </div>
+    </footer>
+</body>
+<script src="/javaScript/jscript.js"></script>
+</html>
